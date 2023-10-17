@@ -1,0 +1,53 @@
+﻿@page "/"
+@using RazorClassLibrary1
+
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+<Component1/>
+<Component2 @ref="_component2" MyProperty="hhhhhh" />
+
+<button @onclick="test1111">fffff</button>
+
+<input @bind-value="_text" />
+
+<div class="dddd" @ref="div1">dadasdasd</div>
+<div class="dddd" @ref="div2">dadasdasd</div>
+
+@code{
+    private Component2 _component2;
+    private ElementReference div1;
+    private ElementReference div2;
+    public string _text { get; set; }
+
+    private async void test1111()
+    {
+        await ExampleModule.Value.InvokeVoidAsync("showEl", div1);
+        await ExampleModule.Value.InvokeVoidAsync("showEl", div2);
+        await _component2.ChangeTitle(_text);
+    }
+
+
+    private Lazy<IJSObjectReference> ExampleModule = new();
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            ExampleModule = new(await JS.InvokeAsync<IJSObjectReference>("import", "./Pages/Index.razor.js"));
+        }
+    }
+
+    public async ValueTask DisposeAsync()
+    {
+        if (ExampleModule.IsValueCreated)
+        {
+            await ExampleModule.Value.DisposeAsync();
+        }
+    }
+}

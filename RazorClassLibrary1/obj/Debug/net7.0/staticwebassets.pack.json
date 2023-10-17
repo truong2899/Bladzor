@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\Component1.razor.js",
+      "PackagePath": "staticwebassets\\Component1.razor.js"
+    },
+    {
+      "Id": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\Component2.razor.js",
+      "PackagePath": "staticwebassets\\Component2.razor.js"
+    },
+    {
+      "Id": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\RazorClassLibrary1.bundle.scp.css",
+      "PackagePath": "staticwebassets\\RazorClassLibrary1.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\wwwroot\\Component11111222.js",
+      "PackagePath": "staticwebassets\\Component11111222.js"
+    },
+    {
+      "Id": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\wwwroot\\Component2ffff.js",
+      "PackagePath": "staticwebassets\\Component2ffff.js"
+    },
+    {
+      "Id": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\wwwroot\\background.png",
+      "PackagePath": "staticwebassets\\background.png"
+    },
+    {
+      "Id": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\wwwroot\\exampleJsInterop.js",
+      "PackagePath": "staticwebassets\\exampleJsInterop.js"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.RazorClassLibrary1.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.RazorClassLibrary1.props",
+      "PackagePath": "build\\RazorClassLibrary1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.RazorClassLibrary1.props",
+      "PackagePath": "buildMultiTargeting\\RazorClassLibrary1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.RazorClassLibrary1.props",
+      "PackagePath": "buildTransitive\\RazorClassLibrary1.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

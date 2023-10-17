@@ -1,0 +1,31 @@
+﻿@using Microsoft.JSInterop;
+<h3>Component21111</h3>
+
+@code {
+    [Parameter]
+    public string MyProperty { get; set; } = string.Empty;
+
+    private Lazy<IJSObjectReference> ExampleModule = new();
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            ExampleModule = new(await JS.InvokeAsync<IJSObjectReference>("import", "./_content/RazorClassLibrary1/Component1.razor.js"));
+
+            await ExampleModule.Value.InvokeVoidAsync("hello", $"ttttt1222 - {MyProperty}");
+        }
+    }
+
+    public async Task ChangeTitle(string text)
+    {
+        await ExampleModule.Value.InvokeVoidAsync("hello", text);
+    }
+
+    public async ValueTask DisposeAsync()
+    {
+        if (ExampleModule.IsValueCreated)
+        {
+            await ExampleModule.Value.DisposeAsync();
+        }
+    }
+}
