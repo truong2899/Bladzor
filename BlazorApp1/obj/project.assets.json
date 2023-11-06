@@ -2,10 +2,10 @@
   "version": 3,
   "targets": {
     "net7.0": {
-      "Microsoft.AspNetCore.Authorization/7.0.7": {
+      "Microsoft.AspNetCore.Authorization/7.0.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.7",
+          "Microsoft.AspNetCore.Metadata": "7.0.8",
           "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
           "Microsoft.Extensions.Options": "7.0.1"
         },
@@ -20,11 +20,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/7.0.7": {
+      "Microsoft.AspNetCore.Components/7.0.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.7",
-          "Microsoft.AspNetCore.Components.Analyzers": "7.0.7"
+          "Microsoft.AspNetCore.Authorization": "7.0.8",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.8"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
@@ -37,16 +37,16 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/7.0.7": {
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.8": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Components.Forms/7.0.7": {
+      "Microsoft.AspNetCore.Components.Forms/7.0.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "7.0.7"
+          "Microsoft.AspNetCore.Components": "7.0.8"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.Forms.dll": {
@@ -59,13 +59,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Web/7.0.7": {
+      "Microsoft.AspNetCore.Components.Web/7.0.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "7.0.7",
-          "Microsoft.AspNetCore.Components.Forms": "7.0.7",
+          "Microsoft.AspNetCore.Components": "7.0.8",
+          "Microsoft.AspNetCore.Components.Forms": "7.0.8",
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
-          "Microsoft.JSInterop": "7.0.7",
+          "Microsoft.JSInterop": "7.0.8",
           "System.IO.Pipelines": "7.0.0"
         },
         "compile": {
@@ -79,14 +79,14 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebAssembly/7.0.7": {
+      "Microsoft.AspNetCore.Components.WebAssembly/7.0.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "7.0.7",
+          "Microsoft.AspNetCore.Components.Web": "7.0.8",
           "Microsoft.Extensions.Configuration.Binder": "7.0.4",
           "Microsoft.Extensions.Configuration.Json": "7.0.0",
           "Microsoft.Extensions.Logging": "7.0.0",
-          "Microsoft.JSInterop.WebAssembly": "7.0.7"
+          "Microsoft.JSInterop.WebAssembly": "7.0.8"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.WebAssembly.dll": {
@@ -102,13 +102,13 @@
           "build/net7.0/Microsoft.AspNetCore.Components.WebAssembly.props": {}
         }
       },
-      "Microsoft.AspNetCore.Components.WebAssembly.DevServer/7.0.7": {
+      "Microsoft.AspNetCore.Components.WebAssembly.DevServer/7.0.8": {
         "type": "package",
         "build": {
           "build/Microsoft.AspNetCore.Components.WebAssembly.DevServer.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/7.0.7": {
+      "Microsoft.AspNetCore.Metadata/7.0.8": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -316,6 +316,38 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
+      "Microsoft.Extensions.Localization/7.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Localization.Abstractions": "7.0.5",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.1"
+        },
+        "compile": {
+          "lib/net7.0/Microsoft.Extensions.Localization.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.Localization.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Localization.Abstractions/7.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/Microsoft.Extensions.Localization.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.Localization.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Logging/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -390,7 +422,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.JSInterop/7.0.7": {
+      "Microsoft.JSInterop/7.0.8": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.JSInterop.dll": {
@@ -403,10 +435,10 @@
           }
         }
       },
-      "Microsoft.JSInterop.WebAssembly/7.0.7": {
+      "Microsoft.JSInterop.WebAssembly/7.0.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.JSInterop": "7.0.7"
+          "Microsoft.JSInterop": "7.0.8"
         },
         "compile": {
           "lib/net7.0/Microsoft.JSInterop.WebAssembly.dll": {
@@ -417,6 +449,30 @@
           "lib/net7.0/Microsoft.JSInterop.WebAssembly.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "MudBlazor/6.11.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.5",
+          "Microsoft.AspNetCore.Components.Web": "7.0.5",
+          "Microsoft.Extensions.Localization": "7.0.5"
+        },
+        "compile": {
+          "lib/net7.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/MudBlazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/MudBlazor.props": {}
         }
       },
       "System.IO.Pipelines/7.0.0": {
@@ -480,7 +536,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "7.0.7"
+          "Microsoft.AspNetCore.Components.Web": "7.0.8",
+          "Microsoft.AspNetCore.Components.WebAssembly": "7.0.8",
+          "Microsoft.AspNetCore.Components.WebAssembly.DevServer": "7.0.8"
         },
         "compile": {
           "bin/placeholder/RazorClassLibrary1.dll": {}
@@ -491,10 +549,10 @@
       }
     },
     "net7.0/browser-wasm": {
-      "Microsoft.AspNetCore.Authorization/7.0.7": {
+      "Microsoft.AspNetCore.Authorization/7.0.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.7",
+          "Microsoft.AspNetCore.Metadata": "7.0.8",
           "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
           "Microsoft.Extensions.Options": "7.0.1"
         },
@@ -509,11 +567,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/7.0.7": {
+      "Microsoft.AspNetCore.Components/7.0.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.7",
-          "Microsoft.AspNetCore.Components.Analyzers": "7.0.7"
+          "Microsoft.AspNetCore.Authorization": "7.0.8",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.8"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
@@ -526,16 +584,16 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/7.0.7": {
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.8": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Components.Forms/7.0.7": {
+      "Microsoft.AspNetCore.Components.Forms/7.0.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "7.0.7"
+          "Microsoft.AspNetCore.Components": "7.0.8"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.Forms.dll": {
@@ -548,13 +606,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Web/7.0.7": {
+      "Microsoft.AspNetCore.Components.Web/7.0.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "7.0.7",
-          "Microsoft.AspNetCore.Components.Forms": "7.0.7",
+          "Microsoft.AspNetCore.Components": "7.0.8",
+          "Microsoft.AspNetCore.Components.Forms": "7.0.8",
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
-          "Microsoft.JSInterop": "7.0.7",
+          "Microsoft.JSInterop": "7.0.8",
           "System.IO.Pipelines": "7.0.0"
         },
         "compile": {
@@ -568,14 +626,14 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebAssembly/7.0.7": {
+      "Microsoft.AspNetCore.Components.WebAssembly/7.0.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "7.0.7",
+          "Microsoft.AspNetCore.Components.Web": "7.0.8",
           "Microsoft.Extensions.Configuration.Binder": "7.0.4",
           "Microsoft.Extensions.Configuration.Json": "7.0.0",
           "Microsoft.Extensions.Logging": "7.0.0",
-          "Microsoft.JSInterop.WebAssembly": "7.0.7"
+          "Microsoft.JSInterop.WebAssembly": "7.0.8"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.WebAssembly.dll": {
@@ -591,13 +649,13 @@
           "build/net7.0/Microsoft.AspNetCore.Components.WebAssembly.props": {}
         }
       },
-      "Microsoft.AspNetCore.Components.WebAssembly.DevServer/7.0.7": {
+      "Microsoft.AspNetCore.Components.WebAssembly.DevServer/7.0.8": {
         "type": "package",
         "build": {
           "build/Microsoft.AspNetCore.Components.WebAssembly.DevServer.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/7.0.7": {
+      "Microsoft.AspNetCore.Metadata/7.0.8": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -805,6 +863,38 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
+      "Microsoft.Extensions.Localization/7.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Localization.Abstractions": "7.0.5",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.1"
+        },
+        "compile": {
+          "lib/net7.0/Microsoft.Extensions.Localization.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.Localization.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Localization.Abstractions/7.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/Microsoft.Extensions.Localization.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.Localization.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Logging/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -879,7 +969,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.JSInterop/7.0.7": {
+      "Microsoft.JSInterop/7.0.8": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.JSInterop.dll": {
@@ -892,10 +982,10 @@
           }
         }
       },
-      "Microsoft.JSInterop.WebAssembly/7.0.7": {
+      "Microsoft.JSInterop.WebAssembly/7.0.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.JSInterop": "7.0.7"
+          "Microsoft.JSInterop": "7.0.8"
         },
         "compile": {
           "lib/net7.0/Microsoft.JSInterop.WebAssembly.dll": {
@@ -906,6 +996,30 @@
           "lib/net7.0/Microsoft.JSInterop.WebAssembly.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "MudBlazor/6.11.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.5",
+          "Microsoft.AspNetCore.Components.Web": "7.0.5",
+          "Microsoft.Extensions.Localization": "7.0.5"
+        },
+        "compile": {
+          "lib/net7.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/MudBlazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/MudBlazor.props": {}
         }
       },
       "System.IO.Pipelines/7.0.0": {
@@ -963,7 +1077,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "7.0.7"
+          "Microsoft.AspNetCore.Components.Web": "7.0.8",
+          "Microsoft.AspNetCore.Components.WebAssembly": "7.0.8",
+          "Microsoft.AspNetCore.Components.WebAssembly.DevServer": "7.0.8"
         },
         "compile": {
           "bin/placeholder/RazorClassLibrary1.dll": {}
@@ -975,10 +1091,10 @@
     }
   },
   "libraries": {
-    "Microsoft.AspNetCore.Authorization/7.0.7": {
-      "sha512": "1w7+mJU4atTeHqd2P53WrAsSnifm/YV8/nDWL16QyfGRTQiyezvQKMbM3qof9QPGeqMfjQPbaphaIYDSqYPAig==",
+    "Microsoft.AspNetCore.Authorization/7.0.8": {
+      "sha512": "zjCONh03Bi4oR35hpe32Ny319StIxy/vmM4SKKxuWn5knsmjLNgofxz9zau1V8upBpkeUZN9sh3qxdmDhQx01Q==",
       "type": "package",
-      "path": "microsoft.aspnetcore.authorization/7.0.7",
+      "path": "microsoft.aspnetcore.authorization/7.0.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -990,14 +1106,14 @@
         "lib/net7.0/Microsoft.AspNetCore.Authorization.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.xml",
-        "microsoft.aspnetcore.authorization.7.0.7.nupkg.sha512",
+        "microsoft.aspnetcore.authorization.7.0.8.nupkg.sha512",
         "microsoft.aspnetcore.authorization.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Components/7.0.7": {
-      "sha512": "AVoTnHtkemVtw2ufE6pRKCGlcaJNLk+eSqmnU5Rot6qcsDfHnrf6latpfeMFz5jvOZdoAJ9PKp9r84O+zn9YPA==",
+    "Microsoft.AspNetCore.Components/7.0.8": {
+      "sha512": "cPYzxPLegK2YUIBGXzBc+wIxI0q5HGnB9QE0bxThcCiplvTfCRtFuvW04/gntewgN4ZgQ6tt9ezOL0jEodRuDQ==",
       "type": "package",
-      "path": "microsoft.aspnetcore.components/7.0.7",
+      "path": "microsoft.aspnetcore.components/7.0.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1005,14 +1121,14 @@
         "THIRD-PARTY-NOTICES.txt",
         "lib/net7.0/Microsoft.AspNetCore.Components.dll",
         "lib/net7.0/Microsoft.AspNetCore.Components.xml",
-        "microsoft.aspnetcore.components.7.0.7.nupkg.sha512",
+        "microsoft.aspnetcore.components.7.0.8.nupkg.sha512",
         "microsoft.aspnetcore.components.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Components.Analyzers/7.0.7": {
-      "sha512": "gNJ4W8YvkfgcrPUNxsplpYVuE3jtRTYKjV7EDUBg1GV0Xkg7KbhXjakeIEuLl5EzvifyhDDTf/XQZlWkWTB9xg==",
+    "Microsoft.AspNetCore.Components.Analyzers/7.0.8": {
+      "sha512": "ijRxeqsfBdbnP/qlEytUp/EvscgXnKOgoP8e8QThAZTQwWwygWW7X45nFQEyx0v/18YYLyVN10lMaaMRb6Q0Nw==",
       "type": "package",
-      "path": "microsoft.aspnetcore.components.analyzers/7.0.7",
+      "path": "microsoft.aspnetcore.components.analyzers/7.0.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1021,14 +1137,14 @@
         "analyzers/dotnet/cs/Microsoft.AspNetCore.Components.Analyzers.dll",
         "build/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets",
         "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets",
-        "microsoft.aspnetcore.components.analyzers.7.0.7.nupkg.sha512",
+        "microsoft.aspnetcore.components.analyzers.7.0.8.nupkg.sha512",
         "microsoft.aspnetcore.components.analyzers.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Components.Forms/7.0.7": {
-      "sha512": "V4kKSogvFgdXveDopY8/b/lKFsIJEBlaWL38VtUD+QAi3iZhcyFoggzHmXqGUEtibsGtqkl+L0xTAu4L8siSgA==",
+    "Microsoft.AspNetCore.Components.Forms/7.0.8": {
+      "sha512": "PO+S8OZCXQP4gHgr5CGh7HjMN0YfwIsEt6/to0aMwvg+zZy7qgI0JYn2p7N5LLg+tthZ1cG3FWGX1Ok4chc43Q==",
       "type": "package",
-      "path": "microsoft.aspnetcore.components.forms/7.0.7",
+      "path": "microsoft.aspnetcore.components.forms/7.0.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1036,14 +1152,14 @@
         "THIRD-PARTY-NOTICES.txt",
         "lib/net7.0/Microsoft.AspNetCore.Components.Forms.dll",
         "lib/net7.0/Microsoft.AspNetCore.Components.Forms.xml",
-        "microsoft.aspnetcore.components.forms.7.0.7.nupkg.sha512",
+        "microsoft.aspnetcore.components.forms.7.0.8.nupkg.sha512",
         "microsoft.aspnetcore.components.forms.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Components.Web/7.0.7": {
-      "sha512": "CSMrPltof1Iv+Bu0jG3pcmofXbabImvONAnrNlA2I1bfdzfYEwWc6GIpyczhNHPe99AA4QaqUqjjDyuiL9CcCA==",
+    "Microsoft.AspNetCore.Components.Web/7.0.8": {
+      "sha512": "E+GLshdeZJtJfBVsw4Vo9qmTszFlk79HbMAGL8in2cVr3awAnGiSL7BcGUZq3/7xEBEHoNh34sxaUMckOQNRsw==",
       "type": "package",
-      "path": "microsoft.aspnetcore.components.web/7.0.7",
+      "path": "microsoft.aspnetcore.components.web/7.0.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1051,14 +1167,14 @@
         "THIRD-PARTY-NOTICES.txt",
         "lib/net7.0/Microsoft.AspNetCore.Components.Web.dll",
         "lib/net7.0/Microsoft.AspNetCore.Components.Web.xml",
-        "microsoft.aspnetcore.components.web.7.0.7.nupkg.sha512",
+        "microsoft.aspnetcore.components.web.7.0.8.nupkg.sha512",
         "microsoft.aspnetcore.components.web.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Components.WebAssembly/7.0.7": {
-      "sha512": "KWK8gYEJ1kuwUkCZQRY/7RYgzxpvM5DmyHuQh4hwJGTc4b4aWJa6rFLTb4VM6cYZRoWzY2DaTNFy+0Bp3HcG1A==",
+    "Microsoft.AspNetCore.Components.WebAssembly/7.0.8": {
+      "sha512": "TEnuSsRqXYRTpxuOzaBWscHBT0y+UGJ5RHUopMT920wP5oIUTzQRa/JYfpxfqkI7PMte5RkdnDv6PUBmB5fydw==",
       "type": "package",
-      "path": "microsoft.aspnetcore.components.webassembly/7.0.7",
+      "path": "microsoft.aspnetcore.components.webassembly/7.0.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1068,14 +1184,14 @@
         "build/net7.0/blazor.webassembly.js",
         "lib/net7.0/Microsoft.AspNetCore.Components.WebAssembly.dll",
         "lib/net7.0/Microsoft.AspNetCore.Components.WebAssembly.xml",
-        "microsoft.aspnetcore.components.webassembly.7.0.7.nupkg.sha512",
+        "microsoft.aspnetcore.components.webassembly.7.0.8.nupkg.sha512",
         "microsoft.aspnetcore.components.webassembly.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Components.WebAssembly.DevServer/7.0.7": {
-      "sha512": "gVoqVe0xlF/0IsaW2OoxADO8K3Oztj9Jw2h0rdo5PCox39GGNoBlC7EIZ/ZLWZGb9K3657Ws7Vi7R3lECpzDRA==",
+    "Microsoft.AspNetCore.Components.WebAssembly.DevServer/7.0.8": {
+      "sha512": "2ahYGfo0S60i5xA6D8rXWy4dYlRyq5Vqfv3DgWsjfO68EV7JNb2WvRnnKPAYZbHpF44MrR2/a8fWtzzxrrUBcA==",
       "type": "package",
-      "path": "microsoft.aspnetcore.components.webassembly.devserver/7.0.7",
+      "path": "microsoft.aspnetcore.components.webassembly.devserver/7.0.8",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -1083,7 +1199,7 @@
         "Icon.png",
         "THIRD-PARTY-NOTICES.txt",
         "build/Microsoft.AspNetCore.Components.WebAssembly.DevServer.targets",
-        "microsoft.aspnetcore.components.webassembly.devserver.7.0.7.nupkg.sha512",
+        "microsoft.aspnetcore.components.webassembly.devserver.7.0.8.nupkg.sha512",
         "microsoft.aspnetcore.components.webassembly.devserver.nuspec",
         "tools/ARM64/aspnetcorev2_inprocess.dll",
         "tools/BlazorDebugProxy/BrowserDebugHost.dll",
@@ -1210,10 +1326,10 @@
         "tools/x86/aspnetcorev2_inprocess.dll"
       ]
     },
-    "Microsoft.AspNetCore.Metadata/7.0.7": {
-      "sha512": "cbSFS7rnPIrwIpTO71AHxF+ToTHvvN6Yq0NzoAeGhf3m6eKO1eyeVv/p9YKp/9zSr3udA5uGYTp/ycaVGV3p5w==",
+    "Microsoft.AspNetCore.Metadata/7.0.8": {
+      "sha512": "1+pY4X78hsIGwHsz1jgCoIy5MGbMeCfUyKV+qy42IPCjeFT+zBsmrSw7axnyE6yrbOvY/8YrOt9fsV4l94bGtA==",
       "type": "package",
-      "path": "microsoft.aspnetcore.metadata/7.0.7",
+      "path": "microsoft.aspnetcore.metadata/7.0.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1225,7 +1341,7 @@
         "lib/net7.0/Microsoft.AspNetCore.Metadata.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.Metadata.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Metadata.xml",
-        "microsoft.aspnetcore.metadata.7.0.7.nupkg.sha512",
+        "microsoft.aspnetcore.metadata.7.0.8.nupkg.sha512",
         "microsoft.aspnetcore.metadata.nuspec"
       ]
     },
@@ -1505,6 +1621,44 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Microsoft.Extensions.Localization/7.0.5": {
+      "sha512": "F5aAQlf29mSTEl13OnJ3f3mBOyjYQ4P9RVC0lIVyhqP2pP7ZdjyWpaGrHjx1rR0g8IRaeM1I8fDYI0nnkanksA==",
+      "type": "package",
+      "path": "microsoft.extensions.localization/7.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net462/Microsoft.Extensions.Localization.dll",
+        "lib/net462/Microsoft.Extensions.Localization.xml",
+        "lib/net7.0/Microsoft.Extensions.Localization.dll",
+        "lib/net7.0/Microsoft.Extensions.Localization.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Localization.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Localization.xml",
+        "microsoft.extensions.localization.7.0.5.nupkg.sha512",
+        "microsoft.extensions.localization.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Localization.Abstractions/7.0.5": {
+      "sha512": "9aKOv6iaYLhCLsLIYIZePKLQ8LYpnasoqjg5lv2RCOz+jkLp/A7YmtNrYfhhmNARX2sq8427KQOyvkFIf8uLaw==",
+      "type": "package",
+      "path": "microsoft.extensions.localization.abstractions/7.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net462/Microsoft.Extensions.Localization.Abstractions.dll",
+        "lib/net462/Microsoft.Extensions.Localization.Abstractions.xml",
+        "lib/net7.0/Microsoft.Extensions.Localization.Abstractions.dll",
+        "lib/net7.0/Microsoft.Extensions.Localization.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Localization.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Localization.Abstractions.xml",
+        "microsoft.extensions.localization.abstractions.7.0.5.nupkg.sha512",
+        "microsoft.extensions.localization.abstractions.nuspec"
+      ]
+    },
     "Microsoft.Extensions.Logging/7.0.0": {
       "sha512": "Nw2muoNrOG5U5qa2ZekXwudUn2BJcD41e65zwmDHb1fQegTX66UokLWZkJRpqSSHXDOWZ5V0iqhbxOEky91atA==",
       "type": "package",
@@ -1660,10 +1814,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.JSInterop/7.0.7": {
-      "sha512": "dfZWcwYuw2aVqtvAV9VC6D9LimVABI1Jmj5DqEhXcwWadFzWTDqfgngEi5GBJG+XZVnuRp2EG6nzllP8Nno3Lw==",
+    "Microsoft.JSInterop/7.0.8": {
+      "sha512": "/KQaTSSeZrOPMMR2nLeN991X7gZUSlxV31wM/ypwSuexGRgQ2IxsXY47TPP2cpuByMyw0qX7vhcoS927Dd/OLQ==",
       "type": "package",
-      "path": "microsoft.jsinterop/7.0.7",
+      "path": "microsoft.jsinterop/7.0.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1671,14 +1825,14 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net7.0/Microsoft.JSInterop.dll",
         "lib/net7.0/Microsoft.JSInterop.xml",
-        "microsoft.jsinterop.7.0.7.nupkg.sha512",
+        "microsoft.jsinterop.7.0.8.nupkg.sha512",
         "microsoft.jsinterop.nuspec"
       ]
     },
-    "Microsoft.JSInterop.WebAssembly/7.0.7": {
-      "sha512": "ZlgjBY0Z4OndhF+1JdZ74xJSMCWljHNrZm/DIBwXAKjlfJok9Vy6+c5Gv8C+J/P19qJjbUL4Uu/CRu6F3IPljg==",
+    "Microsoft.JSInterop.WebAssembly/7.0.8": {
+      "sha512": "es+GZsvNYG6pS582TfdX6qPqQ9ssIai0IIo4xcBKkjLPrvKQnTzsVpgAUTA7TzaAGoi57NgtHdlsmk5PSe/VLw==",
       "type": "package",
-      "path": "microsoft.jsinterop.webassembly/7.0.7",
+      "path": "microsoft.jsinterop.webassembly/7.0.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1686,8 +1840,31 @@
         "THIRD-PARTY-NOTICES.txt",
         "lib/net7.0/Microsoft.JSInterop.WebAssembly.dll",
         "lib/net7.0/Microsoft.JSInterop.WebAssembly.xml",
-        "microsoft.jsinterop.webassembly.7.0.7.nupkg.sha512",
+        "microsoft.jsinterop.webassembly.7.0.8.nupkg.sha512",
         "microsoft.jsinterop.webassembly.nuspec"
+      ]
+    },
+    "MudBlazor/6.11.0": {
+      "sha512": "gP97w+oP0G0slw2P+EKfHfhN126GBHJpL61haQJy3iAo9JSWMkzlcEQ1yFlHSWJQeI9jOZ6pb1IK9XggFOI7lA==",
+      "type": "package",
+      "path": "mudblazor/6.11.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "Nuget.png",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/MudBlazor.props",
+        "buildMultiTargeting/MudBlazor.props",
+        "buildTransitive/MudBlazor.props",
+        "lib/net6.0/MudBlazor.dll",
+        "lib/net6.0/MudBlazor.xml",
+        "lib/net7.0/MudBlazor.dll",
+        "lib/net7.0/MudBlazor.xml",
+        "mudblazor.6.11.0.nupkg.sha512",
+        "mudblazor.nuspec",
+        "staticwebassets/MudBlazor.min.css",
+        "staticwebassets/MudBlazor.min.js"
       ]
     },
     "System.IO.Pipelines/7.0.0": {
@@ -1827,8 +2004,10 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Microsoft.AspNetCore.Components.WebAssembly >= 7.0.7",
-      "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 7.0.7",
+      "Microsoft.AspNetCore.Components.Web >= 7.0.8",
+      "Microsoft.AspNetCore.Components.WebAssembly >= 7.0.8",
+      "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 7.0.8",
+      "MudBlazor >= 6.11.0",
       "RazorClassLibrary1 >= 1.0.0"
     ]
   },
@@ -1838,11 +2017,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\BlazorApp1\\BlazorApp1.csproj",
+      "projectUniqueName": "C:\\Users\\sgvn357\\Desktop\\Bladzor\\BlazorApp1\\BlazorApp1.csproj",
       "projectName": "BlazorApp1",
-      "projectPath": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\BlazorApp1\\BlazorApp1.csproj",
+      "projectPath": "C:\\Users\\sgvn357\\Desktop\\Bladzor\\BlazorApp1\\BlazorApp1.csproj",
       "packagesPath": "C:\\Users\\sgvn357\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\BlazorApp1\\obj\\",
+      "outputPath": "C:\\Users\\sgvn357\\Desktop\\Bladzor\\BlazorApp1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sgvn357\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1859,8 +2038,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\RazorClassLibrary1.csproj": {
-              "projectPath": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\RazorClassLibrary1.csproj"
+            "C:\\Users\\sgvn357\\Desktop\\Bladzor\\RazorClassLibrary1\\RazorClassLibrary1.csproj": {
+              "projectPath": "C:\\Users\\sgvn357\\Desktop\\Bladzor\\RazorClassLibrary1\\RazorClassLibrary1.csproj"
             }
           }
         }
@@ -1875,14 +2054,22 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": {
+            "target": "Package",
+            "version": "[7.0.8, )"
+          },
           "Microsoft.AspNetCore.Components.WebAssembly": {
             "target": "Package",
-            "version": "[7.0.7, )"
+            "version": "[7.0.8, )"
           },
           "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[7.0.7, )"
+            "version": "[7.0.8, )"
+          },
+          "MudBlazor": {
+            "target": "Package",
+            "version": "[6.11.0, )"
           }
         },
         "imports": [

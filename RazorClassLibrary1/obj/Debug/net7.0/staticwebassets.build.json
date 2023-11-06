@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "i4PjkuilADn64LZwYWW5tlVXMHx25AcD94xw1nRAi9A=",
+  "Hash": "kjyULsoSGRgA9SF7m80N/dnh4pWkrzVS8ZdbYeculqw=",
   "Source": "RazorClassLibrary1",
   "BasePath": "_content/RazorClassLibrary1",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "RazorClassLibrary1\\wwwroot",
       "Source": "RazorClassLibrary1",
-      "ContentRoot": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\sgvn357\\Desktop\\Bladzor\\RazorClassLibrary1\\wwwroot\\",
       "BasePath": "_content/RazorClassLibrary1",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\Component1.razor.js",
+      "Identity": "C:\\Users\\sgvn357\\Desktop\\Bladzor\\RazorClassLibrary1\\Component1.razor.js",
       "SourceId": "RazorClassLibrary1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\",
+      "ContentRoot": "C:\\Users\\sgvn357\\Desktop\\Bladzor\\RazorClassLibrary1\\",
       "BasePath": "_content/RazorClassLibrary1",
       "RelativePath": "Component1.razor.js",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "Component1.razor.js"
     },
     {
-      "Identity": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\Component2.razor.js",
+      "Identity": "C:\\Users\\sgvn357\\Desktop\\Bladzor\\RazorClassLibrary1\\Component2.razor.js",
       "SourceId": "RazorClassLibrary1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\",
+      "ContentRoot": "C:\\Users\\sgvn357\\Desktop\\Bladzor\\RazorClassLibrary1\\",
       "BasePath": "_content/RazorClassLibrary1",
       "RelativePath": "Component2.razor.js",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "Component2.razor.js"
     },
     {
-      "Identity": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\obj\\Debug\\net7.0\\scopedcss\\bundle\\RazorClassLibrary1.styles.css",
+      "Identity": "C:\\Users\\sgvn357\\Desktop\\Bladzor\\RazorClassLibrary1\\obj\\Debug\\net7.0\\scopedcss\\bundle\\RazorClassLibrary1.styles.css",
       "SourceId": "RazorClassLibrary1",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\sgvn357\\Desktop\\Bladzor\\RazorClassLibrary1\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
       "BasePath": "_content/RazorClassLibrary1",
       "RelativePath": "RazorClassLibrary1.styles.css",
       "AssetKind": "All",
@@ -65,13 +65,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\obj\\Debug\\net7.0\\scopedcss\\bundle\\RazorClassLibrary1.styles.css"
+      "OriginalItemSpec": "C:\\Users\\sgvn357\\Desktop\\Bladzor\\RazorClassLibrary1\\obj\\Debug\\net7.0\\scopedcss\\bundle\\RazorClassLibrary1.styles.css"
     },
     {
-      "Identity": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\RazorClassLibrary1.bundle.scp.css",
+      "Identity": "C:\\Users\\sgvn357\\Desktop\\Bladzor\\RazorClassLibrary1\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\RazorClassLibrary1.bundle.scp.css",
       "SourceId": "RazorClassLibrary1",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\sgvn357\\Desktop\\Bladzor\\RazorClassLibrary1\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/RazorClassLibrary1",
       "RelativePath": "RazorClassLibrary1.bundle.scp.css",
       "AssetKind": "All",
@@ -82,13 +82,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\RazorClassLibrary1.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\sgvn357\\Desktop\\Bladzor\\RazorClassLibrary1\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\RazorClassLibrary1.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\wwwroot\\background.png",
+      "Identity": "C:\\Users\\sgvn357\\Desktop\\Bladzor\\RazorClassLibrary1\\wwwroot\\background.png",
       "SourceId": "RazorClassLibrary1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\sgvn357\\Desktop\\Bladzor\\RazorClassLibrary1\\wwwroot\\",
       "BasePath": "_content/RazorClassLibrary1",
       "RelativePath": "background.png",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\background.png"
     },
     {
-      "Identity": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\wwwroot\\Component11111222.js",
+      "Identity": "C:\\Users\\sgvn357\\Desktop\\Bladzor\\RazorClassLibrary1\\wwwroot\\Component11111222.js",
       "SourceId": "RazorClassLibrary1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\sgvn357\\Desktop\\Bladzor\\RazorClassLibrary1\\wwwroot\\",
       "BasePath": "_content/RazorClassLibrary1",
       "RelativePath": "Component11111222.js",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\Component11111222.js"
     },
     {
-      "Identity": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\wwwroot\\Component2ffff.js",
+      "Identity": "C:\\Users\\sgvn357\\Desktop\\Bladzor\\RazorClassLibrary1\\wwwroot\\Component2ffff.js",
       "SourceId": "RazorClassLibrary1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\sgvn357\\Desktop\\Bladzor\\RazorClassLibrary1\\wwwroot\\",
       "BasePath": "_content/RazorClassLibrary1",
       "RelativePath": "Component2ffff.js",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\Component2ffff.js"
     },
     {
-      "Identity": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\wwwroot\\exampleJsInterop.js",
+      "Identity": "C:\\Users\\sgvn357\\Desktop\\Bladzor\\RazorClassLibrary1\\wwwroot\\exampleJsInterop.js",
       "SourceId": "RazorClassLibrary1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\sgvn357\\Desktop\\Bladzor\\RazorClassLibrary1\\wwwroot\\",
       "BasePath": "_content/RazorClassLibrary1",
       "RelativePath": "exampleJsInterop.js",
       "AssetKind": "All",

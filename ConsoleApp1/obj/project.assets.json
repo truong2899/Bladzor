@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectUniqueName": "C:\\Users\\sgvn357\\Desktop\\Bladzor\\ConsoleApp1\\ConsoleApp1.csproj",
       "projectName": "ConsoleApp1",
-      "projectPath": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectPath": "C:\\Users\\sgvn357\\Desktop\\Bladzor\\ConsoleApp1\\ConsoleApp1.csproj",
       "packagesPath": "C:\\Users\\sgvn357\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\ConsoleApp1\\obj\\",
+      "outputPath": "C:\\Users\\sgvn357\\Desktop\\Bladzor\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sgvn357\\AppData\\Roaming\\NuGet\\NuGet.Config",
