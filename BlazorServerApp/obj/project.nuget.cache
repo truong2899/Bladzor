@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ut2XRv37d3Sno0ivb6WSsw6bBpfNMggHod0thCXeZtt/8ScmMqNwozQxBnWq7UngfA0/603QE2l33PA8QSPd0Q==",
+  "dgSpecHash": "C2wCbIuRppzIxhZ1K3Fa7fnXqNW/FcpjQOoxkwLs6vxe5EWRM9FjCFfI5BnXCYKaeg7ncQ6dL90hosBpE+m93A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\BlazorServerApp\\BlazorServerApp.csproj",
+  "projectFilePath": "C:\\Users\\sgvn357\\Desktop\\Bladzor\\BlazorServerApp\\BlazorServerApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sgvn357\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.7\\microsoft.aspnetcore.authorization.7.0.7.nupkg.sha512",
     "C:\\Users\\sgvn357\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.7\\microsoft.aspnetcore.components.7.0.7.nupkg.sha512",

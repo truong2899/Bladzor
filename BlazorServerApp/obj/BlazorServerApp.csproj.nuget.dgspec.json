@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\BlazorServerApp\\BlazorServerApp.csproj": {}
+    "C:\\Users\\sgvn357\\Desktop\\Bladzor\\BlazorServerApp\\BlazorServerApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\BlazorServerApp\\BlazorServerApp.csproj": {
+    "C:\\Users\\sgvn357\\Desktop\\Bladzor\\BlazorServerApp\\BlazorServerApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\BlazorServerApp\\BlazorServerApp.csproj",
+        "projectUniqueName": "C:\\Users\\sgvn357\\Desktop\\Bladzor\\BlazorServerApp\\BlazorServerApp.csproj",
         "projectName": "BlazorServerApp",
-        "projectPath": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\BlazorServerApp\\BlazorServerApp.csproj",
+        "projectPath": "C:\\Users\\sgvn357\\Desktop\\Bladzor\\BlazorServerApp\\BlazorServerApp.csproj",
         "packagesPath": "C:\\Users\\sgvn357\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\BlazorServerApp\\obj\\",
+        "outputPath": "C:\\Users\\sgvn357\\Desktop\\Bladzor\\BlazorServerApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sgvn357\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,8 +29,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\RazorClassLibrary1.csproj": {
-                "projectPath": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\RazorClassLibrary1.csproj"
+              "C:\\Users\\sgvn357\\Desktop\\Bladzor\\RazorClassLibrary1\\RazorClassLibrary1.csproj": {
+                "projectPath": "C:\\Users\\sgvn357\\Desktop\\Bladzor\\RazorClassLibrary1\\RazorClassLibrary1.csproj"
               }
             }
           }
@@ -67,14 +67,14 @@
         }
       }
     },
-    "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\RazorClassLibrary1.csproj": {
+    "C:\\Users\\sgvn357\\Desktop\\Bladzor\\RazorClassLibrary1\\RazorClassLibrary1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\RazorClassLibrary1.csproj",
+        "projectUniqueName": "C:\\Users\\sgvn357\\Desktop\\Bladzor\\RazorClassLibrary1\\RazorClassLibrary1.csproj",
         "projectName": "RazorClassLibrary1",
-        "projectPath": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\RazorClassLibrary1.csproj",
+        "projectPath": "C:\\Users\\sgvn357\\Desktop\\Bladzor\\RazorClassLibrary1\\RazorClassLibrary1.csproj",
         "packagesPath": "C:\\Users\\sgvn357\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\obj\\",
+        "outputPath": "C:\\Users\\sgvn357\\Desktop\\Bladzor\\RazorClassLibrary1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sgvn357\\AppData\\Roaming\\NuGet\\NuGet.Config",

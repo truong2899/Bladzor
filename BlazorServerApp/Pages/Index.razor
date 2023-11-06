@@ -1,5 +1,4 @@
 ﻿@page "/"
-@inject IConfiguration config  
 
 <PageTitle>Index</PageTitle>
 
@@ -9,76 +8,5 @@ Welcome to your new app.
 
 <SurveyPrompt Title="How is Blazor working for you?" />
 
-<InputFile OnChange="LoadFile" class="form-control" multiple accept = ".png, .jpeg, .jpg"/>
-
-@if (errors.Count > 0)
-{
-    <h2>Have a Error Occur</h2>
-    <ul class="text-danger">
-        @foreach(string error in errors)
-        {
-            <li>@error</li>
-        }
-    </ul>
-}
-
 @code{
-    private long maxSize = 1024 * 1024 * 1; //Present 1 megabyte
-    private int maxNumberOfFile = 3;
-    private List<string> errors = new();
-
-    private async void LoadFile(InputFileChangeEventArgs e)
-    {
-        string nameFile = "";
-        string path = "";
-        errors.Clear();
-        if (e.FileCount > maxNumberOfFile)
-        {
-            errors.Add($"Attempting to upload {e.FileCount} files, but only allow {maxNumberOfFile} files");
-            return;
-        }
-
-        try
-        {
-            foreach (var file in e.GetMultipleFiles(maxNumberOfFile))
-            {
-                string fileExtension = Path.GetExtension(file.Name.Trim());
-
-                if (fileExtension == ".png" || fileExtension == ".jpg" || fileExtension == "jpeg")
-                {
-                    nameFile = Path.ChangeExtension(
-                    Path.GetRandomFileName(),
-                    fileExtension);
-
-                    path = Path.Combine(
-                        config.GetValue<string>("PathFile")!,
-                        "Files",
-                        nameFile); 
-
-                    if (!Directory.Exists(Path.Combine(
-                            config.GetValue<string>("PathFile")!,
-                            "Files")))
-                    {
-                        // Thư mục không tồn tại, hãy thử tạo nó.
-                        Directory.CreateDirectory(Path.Combine(
-                            config.GetValue<string>("PathFile")!,
-                            "Files"));
-                    }
-
-                    await using FileStream load = new(path, FileMode.Create);
-                    await file.OpenReadStream(maxSize).CopyToAsync(load);
-                }
-                else
-                {
-                    errors.Add($"file: {file.Name} illegal");
-                    return;
-                }
-            }
-        }
-        catch (Exception ex)
-        {
-            errors.Add($"file: {nameFile} in {path} occur error: {ex.Message}");
-            return;
-        }
-    }
 }

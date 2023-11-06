@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\RazorClassLibrary1.csproj": {}
+    "C:\\Users\\sgvn357\\Desktop\\Bladzor\\RazorClassLibrary1\\RazorClassLibrary1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\RazorClassLibrary1.csproj": {
+    "C:\\Users\\sgvn357\\Desktop\\Bladzor\\RazorClassLibrary1\\RazorClassLibrary1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\RazorClassLibrary1.csproj",
+        "projectUniqueName": "C:\\Users\\sgvn357\\Desktop\\Bladzor\\RazorClassLibrary1\\RazorClassLibrary1.csproj",
         "projectName": "RazorClassLibrary1",
-        "projectPath": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\RazorClassLibrary1.csproj",
+        "projectPath": "C:\\Users\\sgvn357\\Desktop\\Bladzor\\RazorClassLibrary1\\RazorClassLibrary1.csproj",
         "packagesPath": "C:\\Users\\sgvn357\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sgvn357\\source\\repos\\ConsoleApp1\\RazorClassLibrary1\\obj\\",
+        "outputPath": "C:\\Users\\sgvn357\\Desktop\\Bladzor\\RazorClassLibrary1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sgvn357\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -42,7 +42,15 @@
           "dependencies": {
             "Microsoft.AspNetCore.Components.Web": {
               "target": "Package",
-              "version": "[7.0.7, )"
+              "version": "[7.0.8, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[7.0.8, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "target": "Package",
+              "version": "[7.0.8, )"
             }
           },
           "imports": [

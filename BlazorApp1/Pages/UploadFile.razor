@@ -1,0 +1,215 @@
+﻿@page "/uploadfile"
+@inject IConfiguration config;
+@inject ISnackbar Snackbar;
+
+<PageTitle>Index</PageTitle>
+
+<h1>Welcome to upload your profile</h1>
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+<InputFile OnChange="LoadFile" class="form-control" multiple accept=".png, .jpeg, .jpg" />
+
+
+<MudContainer Class="mt-16" MaxWidth="MaxWidth.Medium">
+    <MudText Typo="Typo.h3" Align="Align.Center" GutterBottom="true">Checkout</MudText>
+    <MudGrid Spacing="10" Class="mt-16">
+        <MudItem xs="7">
+            <MudText Typo="Typo.h5" GutterBottom="true">Billing address</MudText>
+            <MudGrid>
+                <MudItem xs="12">
+                    <MudTextField T="string" Label="Email" />
+                </MudItem>
+                <MudItem xs="12">
+                    <MudTextField T="string" Label="Mobile number" />
+                </MudItem>
+                <MudItem xs="12">
+                    <MudTextField T="string" Label="Personal number" />
+                </MudItem>
+                <MudItem xs="6">
+                    <MudTextField T="string" Label="First name" />
+                </MudItem>
+                <MudItem xs="6">
+                    <MudTextField T="string" Label="Last name" />
+                </MudItem>
+                <MudItem xs="12">
+                    <MudTextField T="string" Label="Address" />
+                </MudItem>
+                <MudItem xs="6">
+                    <MudTextField T="string" Label="Postal code" />
+                </MudItem>
+                <MudItem xs="6">
+                    <MudTextField T="string" Label="Postal Area" />
+                </MudItem>
+                <MudItem xs="12" Class="d-flex justify-center">
+                    <MudButton Variant="Variant.Filled" DisableElevation="true" Color="Color.Primary" Size="Size.Large" Class="mt-8">Continue to Payment</MudButton>
+                </MudItem>
+            </MudGrid>
+        </MudItem>
+        <MudItem xs="5">
+            <MudText Typo="Typo.h5" GutterBottom="true">Cart</MudText>
+            <MudPaper Class="d-flex flex-column" Style="height:100%;" Outlined="true">
+                <MudList Clickable="true">
+                    <MudListItem Icon="@Icons.Material.Filled.ContentCut">
+                        <div class="d-flex">
+                            <MudText>Scissor - Big</MudText>
+                            <MudText Inline="true" Class="ml-auto">$5</MudText>
+                        </div>
+                    </MudListItem>
+                    <MudListItem Icon="@Icons.Material.Filled.AirplanemodeActive">
+                        <div class="d-flex">
+                            <MudText>Model Airplane</MudText>
+                            <MudText Class="ml-auto">$20</MudText>
+                        </div>
+                    </MudListItem>
+                    <MudListItem Icon="@Icons.Material.Filled.Create">
+                        <div class="d-flex">
+                            <MudText>Plastic Glue</MudText>
+                            <MudText Class="ml-auto">$12</MudText>
+                        </div>
+                    </MudListItem>
+                    <MudListItem Icon="@Icons.Material.Filled.ColorLens">
+                        <div class="d-flex">
+                            <MudText>Color set - Modern planes</MudText>
+                            <MudText Class="ml-auto">$16</MudText>
+                        </div>
+                    </MudListItem>
+                </MudList>
+                <div class="mt-auto">
+                    <MudDivider />
+                    <div class="d-flex pa-4">
+                        <MudText>Total:</MudText>
+                        <MudText Class="ml-auto"><b>$53</b></MudText>
+                    </div>
+                </div>
+            </MudPaper>
+        </MudItem>
+    </MudGrid>
+    <MudStack Style="width: 100%">
+        <MudFileUpload T="IReadOnlyList<IBrowserFile>" OnFilesChanged="LoadFile" AppendMultipleFiles Hidden="false" Class="flex-1" InputClass="absolute mud-width-full mud-height-full overflow-hidden z-20" InputStyle="opacity:0"
+        @ondragenter="@SetDragClass" @ondragleave="@ClearDragClass" @ondragend="@ClearDragClass">
+            <ButtonTemplate>
+                <MudPaper Height="150px" Outlined="true" Class="@DragClass">
+                    <MudText Typo="Typo.h6">Drag and drop files here or click</MudText>
+                    @foreach (var file in fileNames)
+                    {
+                        <MudChip Color="Color.Dark" Text="@file" />
+                    }
+                </MudPaper>
+            </ButtonTemplate>
+        </MudFileUpload>
+        <MudToolBar DisableGutters="true" Class="gap-4">
+            <MudButton On ="LoadFile" Disabled="@(!fileNames.Any())" StartIcon="@Icons.Material.Filled.UploadFile" Color="Color.Primary" Variant="Variant.Filled">Upload</MudButton>
+            <MudButton OnClick="Clear" Disabled="@(!fileNames.Any())" StartIcon="@Icons.Material.Filled.Delete"  Color="Color.Error" Variant="Variant.Filled">Clear</MudButton>
+        </MudToolBar>
+    </MudStack>
+</MudContainer>
+
+@if (errors.Count > 0)
+{
+    <MudAlert Class="pr-6" Severity="Severity.Success" ContentAlignment="HorizontalAlignment.Center" ShowCloseIcon="true">
+        @foreach (string error in errors)
+        {
+            @error
+        }
+    </MudAlert>
+}
+
+
+@code {
+    private static string DefaultDragClass = "relative rounded-lg border-2 border-dashed pa-4 mt-4 mud-width-full mud-height-full z-10";
+    private string DragClass = DefaultDragClass;
+    private List<string> fileNames = new List<string>();
+    private long maxSize = 1024 * 1024 * 1; //Present 1 megabyte
+    private int maxNumberOfFile = 3;
+    private List<string> errors = new();
+
+    private void OnInputFileChanged(InputFileChangeEventArgs e)
+    {
+        ClearDragClass();
+        var files = e.GetMultipleFiles();
+        foreach (var file in files)
+        {
+            fileNames.Add(file.Name);
+        }
+    }
+
+    private async Task Clear()
+    {
+        fileNames.Clear();
+        ClearDragClass();
+        await Task.Delay(100);
+    }
+
+    private void Upload()
+    {
+        //Upload the files here
+        Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopCenter;
+        Snackbar.Add("TODO: Upload your files!", Severity.Normal);
+    }
+
+    private void SetDragClass()
+    {
+        DragClass = $"{DefaultDragClass} mud-border-primary";
+    }
+
+    private void ClearDragClass()
+    {
+        DragClass = DefaultDragClass;
+    }
+
+    private async void LoadFile(InputFileChangeEventArgs e)
+    {
+        string nameFile = "";
+        string path = "";
+        ClearDragClass();
+        errors.Clear();
+        if (e.FileCount > maxNumberOfFile)
+        {
+            errors.Add($"Attempting to upload {e.FileCount} files, but only allow {maxNumberOfFile} files");
+            return;
+        }
+
+        try
+        {
+            foreach (var file in e.GetMultipleFiles(maxNumberOfFile))
+            {
+                string fileExtension = Path.GetExtension(file.Name.Trim());
+
+                if (fileExtension == ".png" || fileExtension == ".jpg" || fileExtension == "jpeg")
+                {
+                    nameFile = Path.ChangeExtension(
+                    Path.GetRandomFileName(),
+                    fileExtension);
+                    path = Path.Combine(
+                        config.GetSection("AppPath")["PathFile"]!.ToString(),
+                        "Files",
+                        nameFile);
+
+                    if (!Directory.Exists(Path.Combine(
+                            config.GetValue<string>("AppPath:PathFile")!,
+                            "Files")))
+                    {
+                        // Thư mục không tồn tại, hãy thử tạo nó.
+                        Directory.CreateDirectory(Path.Combine(
+                            config.GetSection("AppPath")["PathFile"]!,
+                            "Files"));
+                    }
+
+                    await using FileStream load = new(path, FileMode.Create);
+                    await file.OpenReadStream(maxSize).CopyToAsync(load);
+                }
+                else
+                {
+                    errors.Add($"file: {file.Name} illegal");
+                    return;
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            errors.Add($"file: {nameFile} in {path} occur error: {ex.Message}");
+            return;
+        }
+    }
+}
